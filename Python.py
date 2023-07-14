@@ -2,13 +2,13 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver 
 import time 
  
-USERID = '20210222' 
-PASSWORD = '0625'
+USERID = '学績番号' 
+PASSWORD = '誕生日'
 driver = webdriver.Chrome()   
 driver.get('http://kyomu.komagome.ed.jp/port/login.php') 
 time.sleep(0)
-id = driver.find_element(By.XPATH, '//*[@id="UsrCode"]').send_keys(20210222) 
-pwd = driver.find_element(By.XPATH,'//*[@id="PasCode"]').send_keys(PASSWORD)  
+id = driver.find_element(By.XPATH, '//*[@id="UsrCode"]').send_keys(学籍番号) 
+pwd = driver.find_element(By.XPATH,'//*[@id="PasCode"]').send_keys(誕生日)  
 login = driver.find_element(By.XPATH, '//*[@id="form1"]/div[3]/table/tbody/tr[3]/td/input') 
 login.click()
 time.sleep(0.1)
