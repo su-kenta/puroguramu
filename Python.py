@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver 
 import time 
  
-USERID = '学績番号' 
+USERID = '学籍番号' 
 PASSWORD = '誕生日'
 driver = webdriver.Chrome()   
 driver.get('http://kyomu.komagome.ed.jp/port/login.php') 
