@@ -5,7 +5,7 @@ import time
 USERID = '学籍番号' 
 PASSWORD = '誕生日'
 driver = webdriver.Chrome()   
-driver.get('http://kyomu.komagome.ed.jp/port/login.php') 
+driver.get('http://example.ed.jp/port/login.php') 
 time.sleep(0)
 id = driver.find_element(By.XPATH, '//*[@id="UsrCode"]').send_keys(学籍番号) 
 pwd = driver.find_element(By.XPATH,'//*[@id="PasCode"]').send_keys(誕生日)  
